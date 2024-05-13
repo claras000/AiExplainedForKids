@@ -1,0 +1,170 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100% !important;
+  height: 100%;
+  font-family: sans-serif;
+}
+
+#container {
+  height: 550px;
+  width: 100%;
+  position: relative;
+  border: 1px solid black;
+  overflow: hidden;
+  background-color: white;
+  margin: -2;
+  padding: 0px;
+  background-color: #eabd4e;
+}
+
+#score_help {
+  text-align: center;
+  font-size: 25px;
+  background-color: #eaeaea;
+}
+
+#branch {
+  position: absolute;
+  height: 2%;
+  width: 100%;
+
+  top: 23%;
+}
+
+.col {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.col-6 {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.hen {
+  position: absolute;
+  height: 15%;
+  width: 8%;
+  top: 10%;
+  background: url("");
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: 100;
+}
+
+#hen1 {
+  left: 0%;
+}
+
+#hen2 {
+  left: 40%;
+}
+
+#hen3 {
+  left: 60%;
+}
+
+.egg {
+  position: absolute;
+
+  height: 7%;
+  width: 5%;
+  z-index: 99;
+}
+
+#letter01 {
+  top: 15%;
+  left: calc(15% + 8% / 2 - 2% / 2);
+  background-image: url("../images/GameImagesCatch/letter01.png");
+  background-size: cover; /* Das Hintergrundbild wird so skaliert, dass es den gesamten Rahmen ausfüllt */
+  background-position: center; /* Das Hintergrundbild wird zentriert positioniert */
+}
+
+#letter02 {
+  top: 10%;
+  left: calc(40% + 8% / 2 - 2% / 2);
+  background-image: url("../images/GameImagesCatch/letter02.png");
+  background-size: cover; /* Das Hintergrundbild wird so skaliert, dass es den gesamten Rahmen ausfüllt */
+  background-position: center; /* Das Hintergrundbild wird zentriert positioniert */
+}
+
+#letter03 {
+  top: 18%;
+  left: calc(65% + 8% / 2 - 2% / 2);
+  background-image: url("../images/GameImagesCatch/letter03.png");
+  background-size: cover; /* Das Hintergrundbild wird so skaliert, dass es den gesamten Rahmen ausfüllt */
+  background-position: center; /* Das Hintergrundbild wird zentriert positioniert */
+}
+
+.bullseye {
+  display: none;
+  position: absolute;
+  bottom: 0px;
+  height: 7%;
+  width: 7%;
+  background-color: white;
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: 11;
+}
+
+#bullseye1 {
+  left: calc(20% + 8% / 2 - 7% / 2);
+}
+
+#bullseye2 {
+  left: calc(40% + 8% / 2 - 7% / 2);
+}
+
+#bullseye3 {
+  left: calc(60% + 8% / 2 - 7% / 2);
+}
+
+#floor {
+  position: absolute;
+  height: 7%;
+  width: 100%;
+  bottom: 0;
+  z-index: 10;
+}
+
+#basket {
+  height: 120px;
+  width: 100px;
+  position: absolute;
+  bottom: 5px;
+  background-image: url("../images/GameImagesCatch/auntiWhite.png");
+
+  background-size: cover;
+  background-repeat: no-repeat;
+  text-align: center;
+  z-index: 11;
+}
+
+#score_1 {
+  position: absolute;
+  color: #424242;
+  font-size: 30px;
+  top: 45%;
+  left: 30%;
+}
+
+#restart {
+  border: 0;
+  position: absolute;
+  height: 10%;
+  width: 100%;
+  background-color: black;
+  color: white;
+  top: 40%;
+  font-size: 35px;
+  display: none;
+  cursor: pointer;
+}
+
+.playButtonGame {
+  width: 200px;
+  height: auto;
+}

@@ -1,0 +1,229 @@
+section {
+  height: 100vh;
+}
+
+@font-face {
+  font-family: avenir;
+  src: url(fonts/AvenirNextCondensed.ttf);
+}
+
+@font-face {
+  font-family: chauncy;
+  src: url(fonts/ChauncySnowman.ttf);
+}
+
+a,
+h1,
+h2,
+h3,
+h4,
+p {
+  color: black !important;
+  font-family: avenir;
+  font-weight: 300;
+  font-style: normal;
+}
+.chauncy {
+  font-family: chauncy;
+  text-transform: uppercase;
+}
+
+a {
+  font-size: large;
+}
+
+p {
+  font-size: x-large;
+}
+
+.custom-container {
+  margin-left: 31px; /* Adjust as needed */
+  margin-right: 31px; /* Adjust as needed */
+}
+
+.testImages {
+  width: 200px;
+  height: auto;
+}
+
+.testImages1 {
+  width: 50px;
+  height: auto;
+}
+
+/* #nav */
+
+.headline {
+  font-weight: 400;
+  font-style: normal;
+}
+
+nav {
+  background-color: white !important;
+}
+
+.navElements li:hover {
+  background-color: rgb(238, 198, 38);
+  border-radius: 20px;
+}
+
+.navElements a:hover {
+  font-weight: 500;
+}
+
+/* #start screen */
+
+.title {
+  width: 380px;
+  height: auto;
+}
+
+.startingImage {
+  width: 280px;
+  height: auto;
+}
+
+.startingText {
+  width: 380px;
+  height: auto;
+}
+
+/* footer*/
+
+/* help*/
+
+.textHelp {
+  width: 450px;
+  height: auto;
+  margin-top: 20px;
+  margin-left: -20px;
+}
+
+/* #about */
+
+.letsPLay {
+  width: 200px;
+  margin-top: -30px;
+  margin-left: -20px;
+}
+
+/* characters */
+
+.hoverYellow {
+  margin: 0 auto;
+  width: 50px;
+  border-radius: 20px;
+}
+
+.hoverYellow {
+  background-color: transparent; /* Initially transparent */
+  transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+.hovered {
+  background-color: rgb(238, 198, 38) !important; /* Change to yellow */
+}
+
+.characters img {
+  width: auto;
+  height: 300px;
+  margin: 20px;
+}
+.characters p {
+  text-align: center;
+  margin-top: 13px;
+}
+
+.aunti {
+  width: auto;
+  height: 200px;
+  margin: 20px;
+  margin-top: 120px;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+/* #coloring */
+
+.dot {
+  height: 25px;
+  width: 25px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+#yellowColoring {
+  background-color: #eabc4d;
+}
+
+/* #winscreen*/
+.winImage {
+  width: 500px;
+  height: auto;
+}
+
+/* #user */
+
+.UserImage {
+  width: 180px;
+  height: auto;
+  margin-right: 100px;
+  margin-bottom: 50px;
+}
+
+.communityImages {
+  width: 300px;
+  height: auto;
+}
+
+/* #community */
+.communityImage {
+  width: 600px;
+  height: auto;
+}
+
+/* #account */
+
+.accountImage {
+  width: 800px;
+  height: auto;
+}
+
+/* #slider */
+
+.errow {
+  width: 50px;
+  height: 70px;
+}
+
+.storyimage {
+  width: 100%;
+  height: auto;
+}
+
+jl-coloringbook .toolbar {
+  background-color: greenyellow !important; /* Add !important to ensure the style is applied */
+}
+
+/* #gerilla button */
+
+.gerillaButton01 {
+  position: absolute;
+  right: 8%;
+  bottom: 10%;
+  z-index: 2;
+}
+
+/* #colorHelp */
+
+.colorHelp {
+  position: absolute;
+  left: 8%;
+  top: 32%;
+  z-index: 2;
+  width: 200px;
+  height: auto;
+}

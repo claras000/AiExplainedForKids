@@ -1,0 +1,163 @@
+<html>
+  <head>
+    <title>AI Training</title>
+    <link href="style.css" rel="stylesheet" />
+    <!-- #boostrap-->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script>
+    <!-- #movement -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../main.css" />
+  </head>
+
+  <body>
+    <!-- #region nav-->
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-body-tertiary">
+      <div class="container-fluid justify-content-between">
+        <!-- Left elements -->
+        <ul class="navbar-nav flex-row navElements">
+          <li class="nav-item me-3 me-lg-1">
+            <a
+              class="nav-link d-sm-flex align-items-sm-center"
+              href="story01.html"
+              data-aos="fade-down-right"
+              data-aos-duration="1000"
+            >
+              start story
+            </a>
+          </li>
+          <li class="nav-item me-3 me-lg-1">
+            <a
+              class="nav-link fw-lighter"
+              href="about.html"
+              data-aos="fade-down-right"
+              data-aos-duration="1000"
+              >what is it all about</a
+            >
+          </li>
+          <li class="nav-item me-3 me-lg-1">
+            <a
+              class="nav-link"
+              href="characters.html"
+              data-aos="fade-down-right"
+              data-aos-duration="1000"
+              >characters</a
+            >
+          </li>
+        </ul>
+        <!-- Left elements -->
+
+        <!-- Center elements -->
+        <ul
+          class="navbar-nav flex-row d-none d-md-flex"
+          data-aos="fade-down"
+          data-aos-duration="1000"
+        >
+          <li class="nav-item me-3 me-lg-1 active">
+            <a href="start.html">
+              <img src="../images/title.png" class="title" />
+            </a>
+          </li>
+        </ul>
+        <!-- Center elements -->
+
+        <!-- Right elements -->
+        <ul
+          class="navbar-nav flex-row navElements"
+          data-aos="fade-down-left"
+          data-aos-duration="1000"
+        >
+          <li class="nav-item me-3 me-lg-1">
+            <a class="nav-link d-sm-flex align-items-sm-center" href="">
+              login
+            </a>
+          </li>
+          <li class="nav-item me-3 me-lg-1">
+            <a class="nav-link d-sm-flex align-items-sm-center" href="#">
+              account
+            </a>
+          </li>
+          <li class="nav-item me-3 me-lg-1">
+            <a class="nav-link d-sm-flex align-items-sm-center" href="#">
+              community
+            </a>
+          </li>
+        </ul>
+        <!-- Right elements -->
+      </div>
+    </nav>
+    <!-- #endregion nav -->
+    <div class="custom-container">
+      <div class="row">
+        <div class="col"></div>
+        <div class="col-6">
+          <div class="d-flex justify-content-between mt-5">
+            <div>
+              <h1 class="chauncy">Catch the mean words</h1>
+              <p class="chauncy">
+                Let Aunti eat all the mean words.<br />
+                Use your mouse to control aunti
+              </p>
+            </div>
+            <div>
+              <p class="chauncy">Score: <span id="score">0</span></p>
+              <p class="chauncy">Life: <span id="life"></span></p>
+            </div>
+          </div>
+          <div id="container">
+            <div id="branch"></div>
+
+            <div id="letter01" class="egg" data-bullseye="1"></div>
+            <div id="letter02" class="egg" data-bullseye="2"></div>
+            <div id="letter03" class="egg" data-bullseye="3"></div>
+
+            <div id="bullseye1" class="bullseye"></div>
+            <div id="bullseye2" class="bullseye"></div>
+            <div id="bullseye3" class="bullseye"></div>
+
+            <div id="basket">
+              <span id="score_1"></span>
+            </div>
+
+            <div id="floor"></div>
+
+            <button id="restart">Restart</button>
+          </div>
+        </div>
+        <div class="col"></div>
+      </div>
+    </div>
+
+    <script src="jquery.min.js"></script>
+    <script src="collision_detection.js"></script>
+    <script src="variables.js"></script>
+    <script src="functions.js"></script>
+    <script src="script.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>
