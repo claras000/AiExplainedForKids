@@ -75,9 +75,9 @@ function update_score() {
   score_1.text(score);
 
   // Überprüfen, ob der Score 20 erreicht hat
-  if (score === 2) {
+  if (score === 20) {
     stop_the_game();
-    var newPage = "../winGameCatchMeanWords.html";
+    var newPage = "../winGameCatchBadWords.html";
     window.location.href = newPage;
   }
 }

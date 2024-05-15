@@ -10,7 +10,7 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
-    <script src="main.js"></script>
+
     <!-- #movement -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link rel="stylesheet" href="../main.css" />
@@ -22,33 +22,24 @@
     <nav class="navbar navbar-expand-lg navbar-light bg-body-tertiary">
       <div class="container-fluid justify-content-between">
         <!-- Left elements -->
-        <ul class="navbar-nav flex-row navElements">
-          <li class="nav-item me-3 me-lg-1">
-            <a
-              class="nav-link d-sm-flex align-items-sm-center"
-              href="story01.html"
-              data-aos="fade-down-right"
-              data-aos-duration="1000"
-            >
-              start story
-            </a>
-          </li>
+        <ul class="navbar-nav flex-row navElements" style="width: 280px">
+          <li class="nav-item me-3 me-lg-1"></li>
           <li class="nav-item me-3 me-lg-1">
             <a
               class="nav-link fw-lighter"
-              href="about.html"
+              href="../about.html"
               data-aos="fade-down-right"
               data-aos-duration="1000"
-              >what is it all about</a
+              >Tips & Tricks</a
             >
           </li>
           <li class="nav-item me-3 me-lg-1">
             <a
               class="nav-link"
-              href="characters.html"
+              href="../characters.html"
               data-aos="fade-down-right"
               data-aos-duration="1000"
-              >characters</a
+              >Characters</a
             >
           </li>
         </ul>
@@ -61,7 +52,7 @@
           data-aos-duration="1000"
         >
           <li class="nav-item me-3 me-lg-1 active">
-            <a href="start.html">
+            <a href="../start.html">
               <img src="../images/title.png" class="title" />
             </a>
           </li>
@@ -75,18 +66,35 @@
           data-aos-duration="1000"
         >
           <li class="nav-item me-3 me-lg-1">
-            <a class="nav-link d-sm-flex align-items-sm-center" href="">
+            <a
+              class="nav-link d-sm-flex align-items-sm-center"
+              href="../login.html"
+            >
               login
             </a>
           </li>
           <li class="nav-item me-3 me-lg-1">
-            <a class="nav-link d-sm-flex align-items-sm-center" href="#">
+            <a
+              class="nav-link d-sm-flex align-items-sm-center"
+              href="../account.html"
+            >
               account
             </a>
           </li>
           <li class="nav-item me-3 me-lg-1">
-            <a class="nav-link d-sm-flex align-items-sm-center" href="#">
+            <a
+              class="nav-link d-sm-flex align-items-sm-center"
+              href="../community.html"
+            >
               community
+            </a>
+          </li>
+          <li class="nav-item me-3 me-lg-1">
+            <a
+              class="nav-link d-sm-flex align-items-sm-center"
+              href="../aboutUs.html"
+            >
+              about us
             </a>
           </li>
         </ul>
@@ -100,18 +108,31 @@
         <div class="col-6">
           <div class="d-flex justify-content-between mt-5">
             <div>
-              <h1 class="chauncy">Catch the mean words</h1>
+              <h1 class="chauncy">Catch the bad words</h1>
               <p class="chauncy">
-                Let Aunti eat all the mean words.<br />
-                Use your mouse to control aunti
+                aunti has to catch the ugly word to eat them.<br />
+                use your mouse to control aunti.
               </p>
             </div>
-            <div>
-              <p class="chauncy">Score: <span id="score">0</span></p>
-              <p class="chauncy">Life: <span id="life"></span></p>
+            <div class="mt-2">
+              <a
+                href="#"
+                onmouseenter="playButtonHover()"
+                onmouseout="resetImage()"
+              >
+                <img
+                  src="../images/BUTTON_lets play.png"
+                  class="playButtonGame"
+                  id="playbutton"
+                />
+              </a>
             </div>
           </div>
           <div id="container">
+            <div class="d-flex justify-content-end m-2">
+              <p class="chauncy mr-4">Score: <span id="score">0</span></p>
+              <p class="chauncy">Life: <span id="life"></span></p>
+            </div>
             <div id="branch"></div>
 
             <div id="letter01" class="egg" data-bullseye="1"></div>
@@ -134,7 +155,16 @@
         <div class="col"></div>
       </div>
     </div>
-
+    <script>
+      function playButtonHover() {
+        var image = document.getElementById("playbutton");
+        image.src = "../images/BUTTON_lets play selected.png";
+      }
+      function resetImage() {
+        var image = document.getElementById("playbutton");
+        image.src = "../images/BUTTON_lets play.png";
+      }
+    </script>
     <script src="jquery.min.js"></script>
     <script src="collision_detection.js"></script>
     <script src="variables.js"></script>

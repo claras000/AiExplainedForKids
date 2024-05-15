@@ -31,5 +31,7 @@ function the_game() {
     anim_id = requestAnimationFrame(the_game);
   } else {
     stop_the_game();
+    var newPage = "../looseGameCatch01.html";
+    window.location.href = newPage;
   }
 }

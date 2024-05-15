@@ -8,7 +8,7 @@ body {
 }
 
 #container {
-  height: 550px;
+  height: 50vh;
   width: 100%;
   position: relative;
   border: 1px solid black;
@@ -131,8 +131,8 @@ body {
 }
 
 #basket {
-  height: 120px;
-  width: 100px;
+  height: 60px;
+  width: 50px;
   position: absolute;
   bottom: 5px;
   background-image: url("../images/GameImagesCatch/auntiWhite.png");

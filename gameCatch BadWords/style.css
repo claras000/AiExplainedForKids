@@ -8,7 +8,7 @@ body {
 }
 
 #container {
-  height: 400px;
+  height: 50vh;
   width: 100%;
   position: relative;
   border: 1px solid black;
@@ -68,30 +68,32 @@ body {
 
 .egg {
   position: absolute;
-  top: 18%;
+
   height: 7%;
   width: 5%;
-
   z-index: 99;
 }
 
 #letter01 {
+  top: 15%;
   left: calc(15% + 8% / 2 - 2% / 2);
-  background-image: url("../images/GameImagesCatch/letter01.png");
+  background-image: url("../images/GameImagesCatch/letter01evil.png");
   background-size: cover; /* Das Hintergrundbild wird so skaliert, dass es den gesamten Rahmen ausfüllt */
   background-position: center; /* Das Hintergrundbild wird zentriert positioniert */
 }
 
 #letter02 {
+  top: 10%;
   left: calc(40% + 8% / 2 - 2% / 2);
-  background-image: url("../images/GameImagesCatch/letter02.png");
+  background-image: url("../images/GameImagesCatch/letter02evil.png");
   background-size: cover; /* Das Hintergrundbild wird so skaliert, dass es den gesamten Rahmen ausfüllt */
   background-position: center; /* Das Hintergrundbild wird zentriert positioniert */
 }
 
 #letter03 {
+  top: 18%;
   left: calc(65% + 8% / 2 - 2% / 2);
-  background-image: url("../images/GameImagesCatch/letter03.png");
+  background-image: url("../images/GameImagesCatch/letter03evil.png");
   background-size: cover; /* Das Hintergrundbild wird so skaliert, dass es den gesamten Rahmen ausfüllt */
   background-position: center; /* Das Hintergrundbild wird zentriert positioniert */
 }
@@ -129,8 +131,8 @@ body {
 }
 
 #basket {
-  height: 120px;
-  width: 100px;
+  height: 60px;
+  width: 50px;
   position: absolute;
   bottom: 5px;
   background-image: url("../images/GameImagesCatch/auntiWhite.png");
@@ -160,4 +162,9 @@ body {
   font-size: 35px;
   display: none;
   cursor: pointer;
+}
+
+.playButtonGame {
+  width: 200px;
+  height: auto;
 }

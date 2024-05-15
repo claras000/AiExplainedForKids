@@ -20,18 +20,10 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script>
     <!-- #movement -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-    <style>
-      /* CSS for the overlay image */
-      .overlay-image {
-        position: absolute;
-        top: 0;
-        left: 0;
-        display: none;
-        z-index: -1;
-      }
-    </style>
+    <!-- #rquery -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
   </head>
   <body>
@@ -120,87 +112,70 @@
         </div>
       </nav>
       <!-- #endregion nav -->
+
       <!-- #main-->
-
-      <div
-        class="custom-container mt-5"
-        data-aos="zoom in"
-        data-aos-duration="1000"
-      >
+      <div class="custom-container">
         <div class="row">
-          <div class="col d-flex justify-content-around pt-5 mt-5"></div>
-          <div class="col-4">
-            <jl-coloringbook css="./customizedTheme.css">
-              <i color="#CC4F45"></i>
-              <i color="#F4995B"></i>
-              <i color="#028BB0"></i>
-              <i color="#054467"></i>
-              <i color="#EABD4E"></i>
-              <i color=""></i>
-
-              <img
-                src="images/flipDraw.png"
-                class="startingImage"
-                data-aos="fade-right"
-                data-aos-duration="1000"
-                id="brandBoy"
-              />
-            </jl-coloringbook>
+          <div
+            class="col d-flex justify-content-around align-items-center flex-column"
+            style="height: 60vh"
+          >
+            <a href="gameCatch BadWords/index.html"
+              ><img class="errow mt-5" src="images/erowLeft.png"
+            /></a>
           </div>
-          <div class="col-4 mt-5 pt-5">
-            <h1 class="chauncy">Flip</h1>
-            <p class="chauncy">
-              Flip is a creative little boy.<br />
-              He loves science like his Grandfather Hugo.<br />
-              He always asks a lot of questions.
-              <br />
-              <br />
-              random fact: Flip can hit tumble trees.
-            </p>
+          <div class="col-7 mt-5">
+            <div class="d-flex justify-content-around">
+              <jl-coloringbook css="./customizedTheme.css">
+                <i color="#CC4F45"></i>
+                <i color="#F4995B"></i>
+                <i color="#028BB0"></i>
+                <i color="#054467"></i>
+                <i color="#EABD4E"></i>
+                <i color=""></i>
+                <img
+                  src="images/story22.png"
+                  data-aos="fade-right"
+                  data-aos-duration="1000"
+                />
+              </jl-coloringbook>
+            </div>
           </div>
-
-          <div class="col d-flex justify-content-around pt-5 mt-5"></div>
+          <div
+            class="col d-flex justify-content-around align-items-center flex-column"
+            style="height: 60vh"
+          >
+            <a href="story20.html"
+              ><img class="errow mt-5" src="images/errowRight.png"
+            /></a>
+          </div>
         </div>
       </div>
       <!-- #end main-->
+      <!-- #footer -->
+      <div
+        class="d-flex justify-content-between fixed-bottom p-1 footer"
+        data-aos="flip-down"
+        data-aos-duration="1000"
+      >
+        <div></div>
+        <ul class="navbar-nav flex-row pt-5"></ul>
+        <div class="pt-5">
+          <ul class="navbar-nav flex-row navElements">
+            <li class="m-3 p-1"><a href="story01.html">Past Life</a></li>
+            <li class="m-3 p-1"><a href="story07.html">The Invention</a></li>
+            <li class="m-3 p-1"><a href="story12.html">Evil Plan</a></li>
+            <li class="m-3 p-1"><a href="story16.html">What End?</a></li>
+          </ul>
+        </div>
+      </div>
     </section>
-
-    <!-- Overlay image -->
-    <img
-      src="images/yellowStartscreen.png"
-      class="overlay-image"
-      id="overlayImage"
-    />
 
     <script
       src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
       integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
       crossorigin="anonymous"
     ></script>
-    <script>
-      $(document).ready(function () {
-        // Initialize a variable to keep track of the visibility state
-        var overlayVisible = false;
-
-        $("#yellowColoring").click(function () {
-          overlayVisible = !overlayVisible;
-
-          if (overlayVisible) {
-            // Get the position of the "brandBoy" image
-            var brandBoyPosition = $("#brandBoy").offset();
-
-            $("#overlayImage").css({
-              top: brandBoyPosition.top,
-              left: brandBoyPosition.left,
-            });
-
-            $("#overlayImage").show();
-          } else {
-            $("#overlayImage").hide();
-          }
-        });
-      });
-    </script>
     <script
       src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
       integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
@@ -215,7 +190,7 @@
     <script>
       AOS.init();
     </script>
-
+    <!-- #rcoloring-->
     <script src="https://cdn.jsdelivr.net/gh/collinph/jl-coloringbook/jl-coloringBook.js"></script>
   </body>
 </html>

@@ -32,24 +32,15 @@
       <nav class="navbar navbar-expand-lg navbar-light bg-body-tertiary">
         <div class="container-fluid justify-content-between">
           <!-- Left elements -->
-          <ul class="navbar-nav flex-row navElements">
-            <li class="nav-item me-3 me-lg-1">
-              <a
-                class="nav-link d-sm-flex align-items-sm-center"
-                href="story01.html"
-                data-aos="fade-down-right"
-                data-aos-duration="1000"
-              >
-                start story
-              </a>
-            </li>
+          <ul class="navbar-nav flex-row navElements" style="width: 280px">
+            <li class="nav-item me-3 me-lg-1"></li>
             <li class="nav-item me-3 me-lg-1">
               <a
                 class="nav-link fw-lighter"
                 href="about.html"
                 data-aos="fade-down-right"
                 data-aos-duration="1000"
-                >what is it all about</a
+                >Tips & Tricks</a
               >
             </li>
             <li class="nav-item me-3 me-lg-1">
@@ -58,7 +49,7 @@
                 href="characters.html"
                 data-aos="fade-down-right"
                 data-aos-duration="1000"
-                >characters</a
+                >Characters</a
               >
             </li>
           </ul>
@@ -108,6 +99,14 @@
                 community
               </a>
             </li>
+            <li class="nav-item me-3 me-lg-1">
+              <a
+                class="nav-link d-sm-flex align-items-sm-center"
+                href="aboutUs.html"
+              >
+                about us
+              </a>
+            </li>
           </ul>
           <!-- Right elements -->
         </div>
@@ -125,51 +124,115 @@
             /></a>
           </div>
           <div class="col-6 mt-">
-            <div class="d-flex justify-content-center">
+            <div class="d-flex justify-content-center mt-5">
               <h1 class="chauncy">And What next?</h1>
             </div>
             <div class="row">
-              <div class="col-4">
+              <div
+                class="col-4 d-flex justify-content-center align-items-center flex-column"
+                style="height: 50vh"
+                data-aos="fade-right"
+                data-aos-duration="1000"
+              >
                 <p class="chauncy">Firendship is that what counts?</p>
                 <a href="story17.html"
-                  ><img src="images/LetsGoButton.png" alt=""
+                  ><img
+                    src="images/LetsGoButton.png"
+                    alt=""
+                    class="storyimage p-3"
+                    onmouseenter="textHoverHover()"
+                    onmouseout="resetText()"
+                    id="textImage"
                 /></a>
               </div>
-              <div class="col-4">
+              <div
+                class="col-4 d-flex justify-content-center align-items-center flex-column"
+                style="height: 50vh"
+                data-aos="fade-up"
+                data-aos-duration="1000"
+              >
                 <a href="story18.html"
                   ><p class="chauncy">You want to recreate a new Aunti?</p>
-                  <img src="images/LetsGoButton.png" alt=""
+                  <img
+                    src="images/LetsGoButton.png"
+                    alt=""
+                    class="storyimage p-3"
+                    onmouseenter="textHoverHover1()"
+                    onmouseout="resetText1()"
+                    id="textImage1"
                 /></a>
               </div>
-              <div class="col-4">
-                <p class="chauncy">You love Creativity?</p>
+              <div
+                class="col-4 d-flex justify-content-center align-items-center flex-column"
+                style="height: 60vh"
+                style="height: 50vh"
+                data-aos="fade-left"
+                data-aos-duration="1000"
+              >
+                <p class="chauncy">You love <br />Creativity?</p>
                 <a href="story19.html">
-                  <img src="images/LetsGoButton.png" alt=""
+                  <img
+                    src="images/LetsGoButton.png"
+                    alt=""
+                    class="storyimage p-3"
+                    onmouseenter="textHoverHover2()"
+                    onmouseout="resetText2()"
+                    id="textImage2"
                 /></a>
               </div>
             </div>
           </div>
           <div
             class="col d-flex justify-content-around align-items-center flex-column"
+            style="height: 60vh"
           ></div>
         </div>
       </div>
-      <!-- #end main-->
-
-      <!-- #end main-->
-
       <!-- #footer -->
       <div
-        class="d-flex justify-content-between fixed-bottom p-5 footer"
+        class="d-flex justify-content-between fixed-bottom p-1 footer"
         data-aos="flip-down"
         data-aos-duration="1000"
       >
-        <div><img src="images/click_here.png" class="testImages" /></div>
+        <div></div>
         <ul class="navbar-nav flex-row pt-5"></ul>
-        <div class="pt-5"></div>
+        <div class="pt-5">
+          <ul class="navbar-nav flex-row navElements">
+            <li class="m-3 p-1"><a href="story01.html">Past Life</a></li>
+            <li class="m-3 p-1"><a href="story07.html">The Invention</a></li>
+            <li class="m-3 p-1"><a href="story12.html">Evil Plan</a></li>
+            <li class="m-3 p-1"><a href="story16.html">What End?</a></li>
+          </ul>
+        </div>
       </div>
-      <!-- #endregion main-->
     </section>
+
+    <script>
+      function textHoverHover() {
+        var image = document.getElementById("textImage");
+        image.src = "images/LetsGoButton_hover.png";
+      }
+      function resetText() {
+        var image = document.getElementById("textImage");
+        image.src = "images/LetsGoButton.png";
+      }
+      function textHoverHover1() {
+        var image = document.getElementById("textImage1");
+        image.src = "images/LetsGoButton_hover.png";
+      }
+      function resetText1() {
+        var image = document.getElementById("textImage1");
+        image.src = "images/LetsGoButton.png";
+      }
+      function textHoverHover2() {
+        var image = document.getElementById("textImage2");
+        image.src = "images/LetsGoButton_hover.png";
+      }
+      function resetText2() {
+        var image = document.getElementById("textImage2");
+        image.src = "images/LetsGoButton.png";
+      }
+    </script>
 
     <script
       src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
