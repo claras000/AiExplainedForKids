@@ -1,0 +1,48 @@
+## Title
+
+Upside Down
+
+# Description
+
+The interactive website experience is a story about AI explained for kids. To explain AI to kids, we use a story where an old man tells his own experience from his childhood, where he trained an AI using ants. During the narrative, the user can play games and use interactive features.
+
+Regarding the age of the kids, we have one complicated and one easier story:
+
+# Description Age 6-7
+
+We have a single-path story that divides once with the game of training the AI with good words, bad words and at the end. If you win the first training with good words, you follow the story. If you lose, you follow a new ending in which the training failed (Learning: Training AI is difficult and needs a lot of tries).
+The second split happens after training the AI with bad words in a second catching game. If you win, the AI has just good features and a positive ending unfolds (Learning: AI can actually help humans and be good). If you lose, the AI is trained with bad words and the main narrative continues.
+
+At the end of the main story, the user has three options to decide the ending. Here, the kid can play (Learning: The answer to AI being good or bad is ambiguous).
+
+We implemented different endings, but compared to the "8-10 years" game, we decided here for a more strict, single-line narrative since young kids prefer more structure.
+
+```markdown
+![Alt text](./images/account.png)
+
+# Description Age 8-10
+
+# run game
+
+1. install the fonte in the folder /fonts
+2. open the slide header.html
+3. now you can experience the webside
+4. any questions? contact us.
+
+# implementation features
+
+- html
+- css
+- Java Script
+- Bootstrap
+
+# plugin
+
+- jl-coloringBook
+- jquery (for catch game)
+
+# Contact
+
+our concept: https://miro.com/app/board/uXjVKRKtxfc=/
+For any questions or feedback, please contact us at clara.o.correaweb.de
+```
