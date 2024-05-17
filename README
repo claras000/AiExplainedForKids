@@ -17,7 +17,6 @@ At the end of the main story, the user has three options to decide the ending. H
 
 We implemented different endings, but compared to the "8-10 years" game, we decided here for a more strict, single-line narrative since young kids prefer more structure.
 
-```markdown
 ![Alt text](./images/account.png)
 
 # Description Age 8-10
@@ -45,4 +44,3 @@ We implemented different endings, but compared to the "8-10 years" game, we deci
 
 our concept: https://miro.com/app/board/uXjVKRKtxfc=/
 For any questions or feedback, please contact us at clara.o.correaweb.de
-```
