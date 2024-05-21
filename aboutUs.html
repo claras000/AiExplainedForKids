@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Ant whisperer</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- #font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- #boostrap-->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script>
+    <!-- #movement -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <!-- #rquery -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  </head>
+  <body>
+    <!-- #region nav-->
+    <section class="py-1">
+      <nav class="navbar navbar-expand-lg navbar-light bg-body-tertiary fixed-top">
+        <div class="container-fluid justify-content-between">
+          <!-- Left elements -->
+          <ul class="navbar-nav flex-row navElements" style="width: 280px">
+            <li class="nav-item me-3 me-lg-1"></li>
+            <li class="nav-item me-3 me-lg-1">
+              <a
+                class="nav-link fw-lighter"
+                href="about.html"
+                data-aos="fade-down-right"
+                data-aos-duration="1000"
+                >Tips & Tricks</a
+              >
+            </li>
+            <li class="nav-item me-3 me-lg-1">
+              <a
+                class="nav-link"
+                href="characters.html"
+                data-aos="fade-down-right"
+                data-aos-duration="1000"
+                >Characters</a
+              >
+            </li>
+          </ul>
+          <!-- Left elements -->
+
+          <!-- Center elements -->
+          <ul
+            class="navbar-nav flex-row d-none d-md-flex"
+            data-aos="fade-down"
+            data-aos-duration="1000"
+          >
+            <li class="nav-item me-3 me-lg-1 active">
+              <a href="start.html">
+                <img src="images/title.png" class="title" />
+              </a>
+            </li>
+          </ul>
+          <!-- Center elements -->
+
+          <!-- Right elements -->
+          <ul
+            class="navbar-nav flex-row navElements"
+            data-aos="fade-down-left"
+            data-aos-duration="1000"
+          >
+            <li class="nav-item me-3 me-lg-1">
+              <a
+                class="nav-link d-sm-flex align-items-sm-center"
+                href="login.html"
+              >
+                login
+              </a>
+            </li>
+            <li class="nav-item me-3 me-lg-1">
+              <a
+                class="nav-link d-sm-flex align-items-sm-center"
+                href="account.html"
+              >
+                account
+              </a>
+            </li>
+            <li class="nav-item me-3 me-lg-1">
+              <a
+                class="nav-link d-sm-flex align-items-sm-center"
+                href="community.html"
+              >
+                community
+              </a>
+            </li>
+            <li class="nav-item me-3 me-lg-1">
+              <a
+                class="nav-link d-sm-flex align-items-sm-center"
+                href="aboutUs.html"
+              >
+                about us
+              </a>
+            </li>
+          </ul>
+          <!-- Right elements -->
+        </div>
+      </nav>
+      <!-- #endregion nav -->
+
+      <!-- #main-->
+      <div class="custom-container mt-3">
+        <div class="row">
+          <div
+            class="col d-flex justify-content-around align-items-center flex-column"
+            style="height: 60vh"
+          ></div>
+          <div class="col-7 m-5">
+            <div class="d-flex justify-content-around pt-5 mt-3">
+              <img
+                src="images/logoAnimation.png"
+                data-aos="fade-in"
+                data-aos-duration="1000"
+                class="storyimage"
+                id="playButton"
+              />
+            </div>
+          </div>
+
+          <div
+            class="col d-flex justify-content-around align-items-center flex-column"
+            style="height: 60vh"
+          ></div>
+        </div>
+      </div>
+      <!-- #end main-->
+
+   
+
+     
+
+      <!-- #endregion main-->
+    </section>
+   
+    <div class="custom-container mt-5">
+      <div class="row">
+        <div
+          class="col d-flex justify-content-around align-items-center flex-column"
+          style="height: 60vh"
+        ></div>
+        <div class="col-7 m-5">
+          <div class="d-flex justify-content-around">
+            <h1 class="chauncy" style="text-align: center">
+              UP IS DOWN’S MISSION IS <b></b>TO INSPIRE</b> AND NURTURE CHILDREN’S
+              CREATIVITY AND THRIST FOR KNOWLEDGE, THROUGH CAREFUL DESIGNED
+              EXPERIENCES. AT OUR STUDIO WE BELIEVE <b>THE FUTURE GENERATIONS </b>WILL
+              CHANGE THE WORLD TO A BETTER PLACE. WE ARE HERE THELP YOU THROUGH!
+            </h1>
+          </div>
+        </div>
+
+        <div
+          class="col d-flex justify-content-around align-items-center flex-column"
+          style="height: 60vh"
+        ></div>
+      </div>
+    </div>
+
+    <section>
+    <div class="d-flex justify-content-center characters" data-aos="zoom in" style="padding-top: 10% !important;"
+          >
+
+        <div class="character-container chauncy">
+       
+            <img src="images/clara.png" class="character-img " id="clara"   onmouseenter="imageHoverClara()"
+          onmouseout="resetImageClara()"/>
+            <div class="hoverYellow">
+              <p class="characters chauncy">Clara</p>
+            </div>
+          
+        </div>
+
+        <div class="character-container">
+          <a href="flip.html">
+            <img src="images/sara.png" class="character-img" id="sara"onmouseenter="imageHoverSara()"
+          onmouseout="resetImageSara()" />
+            <div class="hoverYellow">
+              <p class="characters chauncy">Sara</p>
+            </div>
+          </a>
+        </div>
+
+        <div class="character-container">
+          <a href="jack.html">
+          <img src="images/anna.png" class="character-img" id="anna" onmouseenter="imageHoverAnna()"
+          onmouseout="resetImageAnna()" />
+          <div class="hoverYellow">
+            <p class="characters chauncy">Anna</p>
+          </div>
+          </a>
+        </div>
+
+        <div class="character-container">
+              <a href="aunti.html">
+          <img src="images/yousra.png" class="aunti character-img"id="yousra" onmouseenter="imageHoverYousra()"
+          onmouseout="resetImageYousra()" />
+          <div class="hoverYellow">
+            <p class="characters chauncy">Yousra</p>
+            </a>
+        </div>
+
+    </div>
+   
+     
+
+    </section>
+
+    <!-- #scroll button -->
+     <img src="images/scollAboutPage.png" class="chapterButton" data-aos="zoom in"/>
+     <!-- #action button -->
+      <a href="#" onclick="animation()"
+            ><img src="images/click_here.png" class="testImages p-2 animationButton"
+          /></a>
+    <!-- #endregion main-->
+    <script>
+      function animation() {
+        var image = document.getElementById("playButton");
+        image.src = "images/logoAnimationHover.gif";
+      }
+
+     
+       function imageHoverClara() {
+        var image = document.getElementById("clara");
+        image.src = "images/claraHover.gif";
+      }
+      function resetImageClara() {
+         var image = document.getElementById("clara");
+        image.src = "images/clara.png";
+      }
+       function imageHoverSara() {
+        var image = document.getElementById("sara");
+        image.src = "images/saraHover.gif";
+      }
+      function resetImageSara() {
+        var image = document.getElementById("sara");
+        image.src = "images/sara.png";
+      }
+
+       function imageHoverAnna() {
+        var image = document.getElementById("anna");
+        image.src = "images/annaHover.gif";
+      }
+      function resetImageAnna() {
+        var image = document.getElementById("anna");
+        image.src = "images/anna.png";
+      }
+
+       function imageHoverYousra() {
+        var image = document.getElementById("yousra");
+        image.src = "images/yousraHover.gif";
+      }
+      function resetImageYousra() {
+        var image = document.getElementById("yousra");
+        image.src = "images/yousra.png";
+      }
+
+    </script>
+
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <!-- #rcoloring-->
+    <script src="https://cdn.jsdelivr.net/gh/collinph/jl-coloringbook/jl-coloringBook.js"></script>
+  </body>
+</html>

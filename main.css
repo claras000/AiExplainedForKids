@@ -241,6 +241,12 @@ jl-coloringbook .toolbar {
   z-index: 2;
 }
 
+.animationButton {
+  position: absolute;
+  left: 2%;
+  bottom: 2%;
+}
+
 /* #colorHelp */
 
 .colorHelp {
