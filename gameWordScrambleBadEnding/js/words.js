@@ -8,5 +8,5 @@ let words = [
     hint: "I am a robot that learns to talk with you, What am I?",
   },
 
-  { word: "dangerous", hint: "Inventing Articial Intelligence can be.." },
+  { word: "risky", hint: "Inventing Articial Intelligence can be.." },
 ];
