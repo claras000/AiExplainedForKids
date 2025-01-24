@@ -1,6 +1,4 @@
-# Title
-
-## Upside Down
+# Upside Down | interactive storytelling for kids
 
 # Description
 
