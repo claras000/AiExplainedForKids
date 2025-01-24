@@ -48,7 +48,7 @@ For any technical questions or feedback, please contact us at clara.o.correa@web
 
 # group memebers
 
-Sara P.: Design, Grafics
-Clara Osterburg Correa: Coding, Implementation, Story
-Anna B.: Dokumentation, story
-Yousra M.: Video
+- Sara P.: Design, Grafics
+- Clara Osterburg Correa: Coding, Implementation, Story
+- Anna B.: Dokumentation, story
+- Yousra M.: Video
