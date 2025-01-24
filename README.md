@@ -15,7 +15,7 @@ kids story with Ineractions of:
 3. word scramble game
 
 
-![Webside Start](./images/screenshots/screenshot-coloring.png)
+![Webside Start](./images/screenshots/screenshot-start.png)
 
 ![Webside coloring](./images/screenshots/screenshot-coloring.png)
 
