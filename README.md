@@ -1,4 +1,4 @@
-# Upside Down | interactive storytelling for kids
+# Upside Down | Interactive Storytelling for Kids
 
 # Description
 
